@@ -1,0 +1,306 @@
+header {
+    background-color: rgba(223, 223, 223, 0.842);
+    height: 400px;
+}
+
+header > h1 {
+    text-align: center;
+    color: orangered;
+    font-style: italic;
+    box-shadow: 0px 0px 4px black;
+    background-color: whitesmoke;
+    width: 800px;
+    position: relative;    
+    left: 450px;
+    top: 20px;
+}
+
+#img1 {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    bottom: 30px;
+    left: 60px;
+}
+
+.menu,
+.menu ul {
+    float: left;
+    position: relative;
+    padding: 0;
+    bottom: 328px;
+    left: 1250px;
+    list-style: none;
+    width: 183px;
+    height: 20px;
+    text-align: center;
+    border-top: 1px solid grey;
+}
+
+.menu li {
+    height: 20px;
+    padding: 0;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    width: 181px;
+}
+
+.menu a:link,
+.menu a:visited {
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+    background-color: whitesmoke;
+    color: blue;
+    text-decoration: overline underline;
+}
+
+.menu .submenu {
+    position: relative;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 20px;
+    border-top: none;
+}
+
+.menu .submenu:hover ul,
+.menu .submenu:focus ul,
+.menu .submenu:active ul {
+    display: block;
+}
+
+@font-face {
+    font-family: ItalianBreakfast;
+    src: url(multimedia/ItalianBreakfast-Regular.otf) format("opentype");
+}
+
+header > p {
+    position: relative;
+    left: 450px;
+    bottom: 235px;
+    font-size: 2.5em;
+    font-family: ItalianBreakfast;
+}
+
+#h {
+    position: relative;
+    top: 15px;
+    left: 50px;
+    color: rgb(250, 117, 68);
+}
+
+#img2 {
+    position: relative;
+    top: 30px ;
+}
+
+#p1 {
+    position: relative;
+    top: 30px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid grey;
+    background-color: rgb(253, 253, 143);
+    width: 1330px;
+    left: 30px;
+    height: 105px;
+    color: black;
+    text-align: center;
+    padding: 5px 5px 5px 10px;
+}
+
+div {
+    position: relative;
+    bottom: 22px;
+    height: 1100px;
+    border-bottom: none;
+    animation: mydiv 30s infinite;
+}
+
+@keyframes mydiv {
+    from {
+        background-color: gold;
+        border: 1px solid orangered;
+    }
+    to {
+       background-color: goldenrod;
+       border: 1px solid grey;
+    }
+}
+
+footer {
+    border: 1px solid black;
+    position: relative;
+    bottom: 22px;
+    height: 200px;
+}
+
+#p2 {
+    position: relative;
+    left: 20px;
+}
+
+#p3 {
+    position: relative;
+    left: 20px;
+}
+
+#p4 {
+    position: relative;
+    left: 20px;
+}
+
+#p5 {
+    position: relative;
+    left: 20px;
+}
+
+footer > a {
+    position: relative;
+    left: 20px;
+}
+
+div > table {
+    position: relative;
+    left: 50px;
+}
+
+table {
+    text-align: center;
+}
+
+#p6 {
+    position: relative;
+    left: 40px;
+    font-size: 1.1em;
+}
+
+#img5 {
+    position: relative;
+    top: 40px;
+}
+
+#ul1 {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    font-size: 3em;
+}
+
+#img3 {
+    width: 148px;
+    height: 231px;
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+
+#p7 {
+    position: relative;
+    top: 40px;
+    left: 30px;
+    font-size: 1.2em;
+    width: 1100px;
+}
+
+.contextmenu,
+.contextmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contextmenu {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    box-shadow: 5px 5px 10px gray;
+    animation: mymove 30s 1;
+}
+
+@keyframes mymove {
+    from {
+        background-color: rgba(223, 223, 223, 0.942);
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+.contextmenu li {
+    padding: 0;
+    border-top: 0.5px solid blue;
+    border-left: 0.5px solid blue;
+    border-right: 0.5px solid black;
+}
+
+.contextmenu li:last-child {
+    border-bottom: 0.5px solid blue;
+}
+
+.contextmenu a {
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 158px;
+    height: 38px;
+}
+
+.contextmenu a:link,
+.contextmenu a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.contextmenu li:hover,
+.contextmenu li:focus,
+.contextmenu li:active {
+    background-image: url('anim.gif');
+    background-position: center;
+}
+
+.contextmenu a:hover,
+.contextmenu a:focus,
+.contextmenu a:active {
+    color: blue;
+    text-decoration: overline underline;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+.contextmenu ul {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: -1px;
+    left: 159px;
+}
+
+.contextmenu img {
+    padding: 1px;
+}
+
+.contextmenu img:hover,
+.contextmenu img:focus,
+.contextmenu img:active {
+    padding: 1px;
+    border: 0.5px solid black;
+}
+
+#a1{
+    background-color: transparent;
+    width: 40px;
+    float: right;
+}
